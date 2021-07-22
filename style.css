@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  min-height: 100vh;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  font-family: inherit;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 50px;
+  background-color: #8f8f8f;
+  box-shadow: 0 3px #625e5e;
+}
+button:hover {
+  filter: opacity(0.9);
+}
+button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+.calculator {
+  width: 400px;
+  max-width: 90%;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+.calculator-display {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  background-color: #c8c8c8;
+  border-radius: 5px;
+  padding: 10px;
+}
+.calculator-display h1 {
+  font-size: 50px;
+  overflow-x: auto;
+}
+.calculator-display h1::-webkit-scrollbar {
+  height: 10px;
+}
+.calculator-display h1::-webkit-scrollbar-thumb {
+  background-color: #7f7f7f;
+}
+.calculator-display h1::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.operator {
+  font-size: 40px;
+  color: white;
+  background-color: #494949;
+}
+.equal-btn {
+  grid-column: 4;
+  grid-row: 2 / 6;
+  background-color: #00a000;
+}
+.clear-btn {
+  background-color: #ffa1a1;
+}
